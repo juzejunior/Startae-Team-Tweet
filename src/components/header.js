@@ -12,7 +12,7 @@ import {
 
 const Header = () => (
   <Link to={"/"}>
-    {isMobile && (
+    {/*isMobile && (
       <div
         style={{
           display: "flex",
@@ -26,23 +26,30 @@ const Header = () => (
       >
         <img src={StartaeLogoSymbol} style={{ position: "relative" }} />
       </div>
-    )}
-    {!isMobile && (
-      <div
+      )*/}
+    <div
+      style={{
+        display: "flex",
+        marginBottom: isMobile ? "auto" : 64,
+        marginLeft: isMobile ? "auto" : 16,
+        marginRight: isMobile ? "auto" : 16,
+        background: isMobile ? "#550aaa" : "#5D1EB2",
+        position: isMobile ? "fixed" : "static",
+        width: "100%",
+        justifyContent: isMobile ? "center" : "flex-start",
+        alignItems: isMobile ? "center" : "start",
+      }}
+    >
+      <img src={StartaeLogoSymbol} style={{ marginRight: 8, marginTop: 24 }} />
+      <img
+        src={StartaeLogoType}
         style={{
-          display: "flex",
-          marginBottom: 64,
-          marginLeft: 16,
-          marginRight: 16,
+          marginRight: 8,
+          marginTop: 24,
+          display: isMobile ? "none" : "inline",
         }}
-      >
-        <img
-          src={StartaeLogoSymbol}
-          style={{ marginRight: 8, marginTop: 24 }}
-        />
-        <img src={StartaeLogoType} style={{ marginRight: 8, marginTop: 24 }} />
-      </div>
-    )}
+      />
+    </div>
   </Link>
 )
 
