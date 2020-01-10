@@ -21,7 +21,7 @@ function CardTweet({ avatar, tweet, visible, position }) {
       >
         {position == "right" && (
           <img
-            src={avatar}
+            src={`https://startae.com/assets/images/team/${avatar}`}
             style={{
               marginRight: 16,
               height: 70,
@@ -51,7 +51,7 @@ function CardTweet({ avatar, tweet, visible, position }) {
         </div>
         {position == "left" && (
           <img
-            src={avatar}
+            src={`https://startae.com/assets/images/team/${avatar}`}
             style={{ marginRight: 16, height: 70, borderRadius: 70 / 2 }}
           />
         )}

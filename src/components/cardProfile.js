@@ -6,7 +6,9 @@ function CardProfile({ member }) {
   const handleClickEvent = event => {
     if (event.target.tagName != "A") {
       navigate(
-        `/timeline/?username=${username}&name=${member.name}&avatar=${member.avatar}&role=${member.role}&tweet=${member.tweet}`
+        `/timeline/?username=${username}&name=${member.name}&avatar=${
+          member.avatar.split("/team/")[1]
+        }&role=${member.role}&tweet=${member.tweet}`
       )
     }
   }
