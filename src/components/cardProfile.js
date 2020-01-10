@@ -52,7 +52,7 @@ function CardProfile({ member }) {
           textAlign: "center",
           color: "black",
           fontSize: 16,
-          fontWeight: "bold",
+          fontFamily: "Proxima Nova Bold",
         }}
       >
         <span>{member.role}</span>

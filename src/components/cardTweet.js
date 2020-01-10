@@ -34,7 +34,7 @@ function CardTweet({ avatar, tweet, visible, position }) {
             style={{
               color: "black",
               fontSize: 16,
-              fontWeight: "bold",
+              fontFamily: "Proxima Nova Bold",
               textAlign: position == "left" ? "right" : "left",
             }}
           >
