@@ -31,7 +31,7 @@
 
 1. **Build**
 
-  Build application:
+   Build application:
 
     ```
     gatsby build
