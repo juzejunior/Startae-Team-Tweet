@@ -20,12 +20,7 @@ function IndexPage() {
   useEffect(() => {
     axios
       .get(
-        "https://gist.githubusercontent.com/sales/f961f967c6668c7c1c3ed565e3bf94e8/raw/71168b72d9a3a199bd1de01026b5031875f6d432/team.json",
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-          },
-        }
+        "https://cors-anywhere.herokuapp.com/https://gist.githubusercontent.com/sales/f961f967c6668c7c1c3ed565e3bf94e8/raw/71168b72d9a3a199bd1de01026b5031875f6d432/team.json"
       )
       .then(function(response) {
         setTeam(
