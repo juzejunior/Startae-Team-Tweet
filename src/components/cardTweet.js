@@ -1,7 +1,7 @@
 import React from "react"
 import triangleLeftIcon from "../images/triangleLeft.svg"
 import triangleRightIcon from "../images/triangleRight.svg"
-import { isMobile } from "mobile-device-detect"
+import heartIcon from "../images/heart.svg"
 
 function CardTweet({ avatar, tweet, visible, position }) {
   const visibility = visible ? "visible" : "hidden"
@@ -38,7 +38,7 @@ function CardTweet({ avatar, tweet, visible, position }) {
               textAlign: position == "left" ? "right" : "left",
             }}
           >
-            5
+            5h
           </div>
           <div
             style={{
@@ -50,6 +50,7 @@ function CardTweet({ avatar, tweet, visible, position }) {
             }}
           >{`"${tweet}"`}</div>
         </div>
+
         {position == "left" && (
           <img
             src={`https://startae.com/assets/images/team/${avatar}`}

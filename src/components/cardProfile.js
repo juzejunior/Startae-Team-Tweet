@@ -1,5 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
+import heartIcon from "../images/heart.svg"
 
 function CardProfile({ member }) {
   const username = member.twitter.split("https://twitter.com/")[1]
@@ -26,6 +27,7 @@ function CardProfile({ member }) {
         flexDirection: "column",
         padding: 16,
         cursor: "pointer",
+        justifyContent: "space-between",
       }}
       onClick={handleClickEvent}
     >
@@ -68,6 +70,19 @@ function CardProfile({ member }) {
         }}
       >
         <span>{`"${member.tweet}"`}</span>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          alignItems: "baseline",
+          marginRight: 8,
+          color: "#A7B8C3",
+          marginTop: 8,
+        }}
+      >
+        <img src={heartIcon} style={{ marginRight: 8 }} />
+        <span>1</span>
       </div>
     </div>
   )
