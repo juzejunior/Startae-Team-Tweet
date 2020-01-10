@@ -3,7 +3,12 @@ import PropTypes from "prop-types"
 import React from "react"
 import StartaeLogoSymbol from "../images/logo-symbol.svg"
 import StartaeLogoType from "../images/logo-type.svg"
-import { isMobile } from "mobile-device-detect"
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect"
 
 const Header = () => (
   <Link to={"/"}>
@@ -30,7 +35,6 @@ const Header = () => (
           marginRight: 16,
         }}
       >
-        {isMobile ? console.log("sou mobile") : console.log("Sou desktop")}
         <img
           src={StartaeLogoSymbol}
           style={{ marginRight: 8, marginTop: 24 }}

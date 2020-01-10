@@ -16,6 +16,7 @@
     "mobile-device-detect": "^0.3.3",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-device-detect": "^1.11.14",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1"
   },

@@ -45,6 +45,7 @@ function CardTweet({ avatar, tweet, visible, position }) {
               fontStyle: "italic",
               color: "#656565",
               fontSize: "1em",
+              marginBottom: "10px",
               textAlign: position == "left" ? "right" : "left",
             }}
           >{`"${tweet}"`}</div>
