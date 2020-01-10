@@ -12,7 +12,7 @@ import {
 
 const Header = () => (
   <Link to={"/"}>
-    {isMobile ? (
+    {isMobile && (
       <div
         style={{
           display: "flex",
@@ -26,7 +26,8 @@ const Header = () => (
       >
         <img src={StartaeLogoSymbol} style={{ position: "relative" }} />
       </div>
-    ) : (
+    )}
+    {!isMobile && (
       <div
         style={{
           display: "flex",
