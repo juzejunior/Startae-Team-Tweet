@@ -17,7 +17,7 @@ const Header = () => (
         style={{
           display: "flex",
           justifyContent: "center",
-          minHeight: 70,
+          height: 70,
           width: "100%",
           position: "fixed",
           background: "#550aaa",
