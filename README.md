@@ -37,3 +37,10 @@
     gatsby build
     ```
 
+1. **Deploy**
+   
+   Deployment is running with Netlify at:
+   
+   ```
+   https://cocky-pasteur-ddb300.netlify.com/
+   ```
