@@ -5,10 +5,9 @@ const PageTitle = ({ title }) => (
     style={{
       color: "white",
       fontSize: "4em",
-      fontFamily: "ProximaNova",
-      fontWeight: "bold",
       marginBottom: 8,
       lineHeight: 1,
+      fontFamily: "Proxima Nova Bold",
     }}
   >
     {title}

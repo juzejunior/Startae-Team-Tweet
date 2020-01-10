@@ -6,7 +6,7 @@ const Background = () => (
     style={{
       position: "absolute",
       width: "100%",
-      height: "120%",
+      height: "140%",
       clipPath: "polygon(0 0, 100% 0,100% 100%,0 50%)",
       background: "#5D1EB2",
       zIndex: -1,
