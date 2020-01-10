@@ -42,10 +42,7 @@ function IndexPage() {
       <Background />
       <Header />
       <Container>
-        <div
-          key={isMobile}
-          style={{ minWidth: "30%", marginTop: isMobile ? 100 : 0 }}
-        >
+        <div key={isMobile} style={{ minWidth: "30%", marginTop: 70 }}>
           <Pagetitle title="Meet our team" />
           <PageSubTitle
             subtitle={
